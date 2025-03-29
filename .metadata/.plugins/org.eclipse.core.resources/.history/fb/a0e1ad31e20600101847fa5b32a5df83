@@ -1,0 +1,23 @@
+package type;
+
+public class CharType {
+
+	public static void main(String[] args) {
+		// 문자 및 문자열 자료형
+		System.out.println(**문자자료형**);
+	
+    char ch1 = 'B';
+    
+    System.out.println(ch1);
+    System.out.println((int)ch1);
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+}

@@ -1,0 +1,24 @@
+package type;
+
+public class CharType {
+
+	public static void main(String[] args) {
+		
+	
+    char ch1 = 'B';
+    
+    System.out.println(ch1);
+    System.out.println((int)ch1);
+	
+    
+    char ch2 = 67;
+  //  int ch2 = 67;
+    System.out.println(ch2);
+    
+    
+    char kor1 = '달';
+    System.out.println(kor1);
+		
+	}
+
+}
