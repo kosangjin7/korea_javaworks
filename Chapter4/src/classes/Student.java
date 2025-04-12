@@ -15,7 +15,7 @@ public class Student {
 	public Student() {};
 	
 	//매개변수가 있는 생성자
-	public student(int id, String n,int g) {
+	public Student(int id, String n,int g) {
 		studentId=id;
 		name=n;
 		grade=g;
