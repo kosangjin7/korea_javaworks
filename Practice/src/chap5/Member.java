@@ -2,9 +2,14 @@ package chap5;
 
 public class Member {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private String id;
+	private String password;
+	
+	public Member(String id,String password) {
+		this.id=id;
+		this.password=password;
 	}
-
+	public void showMemberInfo() {
+		System.out.println("id:"+id+"password:"+password);
+	}
 }

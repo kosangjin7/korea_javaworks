@@ -36,14 +36,24 @@ public class AnimalTest {
   public static void main(String[] args) {
 	  AnimalTest aTest=new AnimalTest();
 	  //부모타입=자식타입(자동 형변환)
-	 /* Animal human=new Human();
+	/* Animal human=new Human();
 	  Animal horse=new Horse();
-	  human.move();*/
+	 
+	  Human human=new Human();
+	  Horse horse=new Horse();
 	  
-	  aTest.moveAnimal(new Human());
+	  
+	  
+	  
+	  
+	  human.move();
+	  horse.move();
+	  */
+	  
+	 aTest.moveAnimal(new Human());
 	  aTest.moveAnimal(new Horse());
 	  aTest.moveAnimal(new Eagle());
-	  
+	 
   }
 	 
 }	

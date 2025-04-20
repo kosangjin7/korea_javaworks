@@ -26,6 +26,10 @@ public class MyMath {
 		int value2= MyMath.abs(-8);
 		System.out.println(value2);
 		
+		
+		int result1=MyMath.square(5);
+		System.out.println(r);
+		
 		int value3=Math.abs(-8);
 		System.out.println(value3);
 		
