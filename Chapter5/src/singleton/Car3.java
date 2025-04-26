@@ -1,0 +1,19 @@
+package singleton;
+
+public class Car3 {
+	//static 변수 선언(정적변수)
+	private static int serialNum=1000;
+	private int carNumber;
+	
+	//생성자
+	public Car3() {
+		serialNum++;
+		carNumber=serialNum;
+	}
+	
+	//접근자
+	public int getCarNumber() {
+		return carNumber;
+	}
+
+}

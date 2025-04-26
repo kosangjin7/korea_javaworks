@@ -5,4 +5,6 @@
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="reference.score.Subject"/>
+    <fullyQualifiedTypeName name="singleton.CarFactory"/>
+    <fullyQualifiedTypeName name="statics.Car"/>
 </qualifiedTypeNameHistroy>
