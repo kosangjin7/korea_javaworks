@@ -1,6 +1,6 @@
 package Objects;
 
-public class Book {
+public class Book  {
 	//책번호,책제목
 	int bookNumber;
 	String bookTitle;
@@ -12,11 +12,10 @@ public class Book {
 	//객체의 정보를 문자열로 출력
 	@Override
 	public String toString() {
-		return bookNumber +","+bookTitle;
-		
-		
+		return bookNumber+","+bookTitle;
 	}
-	@Override
+	
+	/*@Override
 	public boolean equals(Object obj) {
 		//instanceof - 클래스이 객체(인스턴스)인지 확인 사용
 		if(obj instanceof Book) {
@@ -24,7 +23,7 @@ public class Book {
 			if(this.bookNumber == book.bookNumber)
 				return true;
 			
-		}
+		}*/
 		
 		
 		return false;

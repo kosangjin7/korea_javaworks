@@ -1,7 +1,5 @@
 package singleton.car;
 
-import statics.Car;
-
 public class Main {
 
 	public static void main(String[] args) {
