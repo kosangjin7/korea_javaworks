@@ -7,4 +7,16 @@
     <fullyQualifiedTypeName name="singleton.CarFactory"/>
     <fullyQualifiedTypeName name="statics.Car"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="abstract_class.animal.Animal"/>
+    <fullyQualifiedTypeName name="abstract_class.car.HumanCar"/>
+    <fullyQualifiedTypeName name="abstract_class.car.AICar"/>
+    <fullyQualifiedTypeName name="interfaces.calculator.Calculator"/>
+    <fullyQualifiedTypeName name="interfaces.calculator.MyCalculator"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="interfaces.remote.control.Television"/>
+    <fullyQualifiedTypeName name="interfaces.remote.control.RemoteControl"/>
+    <fullyQualifiedTypeName name="interfaces.remote.control.RemoteControlTest"/>
 </qualifiedTypeNameHistroy>

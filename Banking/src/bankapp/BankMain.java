@@ -4,20 +4,21 @@ import java.util.Scanner;
 
 public class BankMain {
 	//전역공간
-
-			static BankAccount[] accounts = new BankAccount[100];
-			static Scanner scan=new Scanner(System.in);
+	static BankAccount[] accounts = new BankAccount[100];
+	static Scanner scan=new Scanner(System.in);
 
 	public static void main(String[] args) {
 	
-			boolean sw = true ;//실행과 종료 상태 변수
+		boolean sw = true ;//실행과 종료 상태 변수
+		
+		while(sw) {
+			System.out.println("====================================="); 
+			System.out.println("1.계좌생성|2.계좌목록|3.예금 |4.출금 |5.종료"); 
+			System.out.println("====================================="); 
+			System.out.println("선택>"); 
 			
-			while(sw) {
-				System.out.println("====================================="); 
-				System.out.println("1.계좌생성|2.계좌목록|3.예금 |4.출금 |5.종료"); 
-				System.out.println("====================================="); 
-				System.out.println("선택>"); 
-			//선택 메뉴는 문자를 정수형으로 변환	
+			try {//메뉴 선택시 문자 입력으로 인한 예외 처리	
+				//선택 메뉴는 문자를 정수형으로 변환
 				int selectNum=Integer.parseInt(scan.nextLine());
 				
 				switch(selectNum) {
@@ -46,9 +47,12 @@ public class BankMain {
 				   break;
 				
 				}
-			}//while()닫기
+			}catch(NumberFormatException e) {
+				System.out.println("잘못된 입력입니다. 다시 입력하세요");
+			}
+		}//while()닫기
 			scan.close();
-		}//main()닫기
+	}//main()닫기
 	 	
 	 private static BankAccount findAccount(String ano) {
 		 BankAccount account = null;//객체초기화
@@ -63,11 +67,7 @@ public class BankMain {
 			 }
 		 }
 		 
-		 
-		 
 		 return account;
-		 
-		 
 	 }
 	 
 	 
@@ -80,17 +80,22 @@ public class BankMain {
 			System.out.println("계좌번호:");
 			String ano=scan.nextLine();//계좌입력  
 			
-			System.out.println("출금액:");
-			int amount=Integer.parseInt(scan.nextLine());  
+			 
 			
 			if(findAccount(ano) !=null) {//일치되는 계좌번호가 있으면
 				BankAccount account=findAccount(ano);
+				while(true) {
+					System.out.println("출금액:");
+					int amount=Integer.parseInt(scan.nextLine()); 
+				
 				if(amount>account.getBalance()) {
 					System.out.println("잔액이 부족합니다.다시 입력하세요");
 				}
 				//출금=잔고-입금액
 				account.setBalance(account.getBalance()-amount);
 				System.out.println("결과: 정상 출금되었습니다.현재잔액:"+account.getBalance());
+				break;//while문 빠져나옴
+				}
 			}else {
 				System.out.println("결과: 계좌가 없습니다.");
 				}
