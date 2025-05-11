@@ -17,6 +17,20 @@
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="interfaces.remote.control.Television"/>
-    <fullyQualifiedTypeName name="interfaces.remote.control.RemoteControl"/>
     <fullyQualifiedTypeName name="interfaces.remote.control.RemoteControlTest"/>
+    <fullyQualifiedTypeName name="interfaces.remote.control.Searvhable"/>
+    <fullyQualifiedTypeName name="interfaces.remote.control.SmartTV"/>
+    <fullyQualifiedTypeName name="interfaces.remote.control.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+    <fullyQualifiedTypeName name="abstract_class.game_level.Beginner"/>
+    <fullyQualifiedTypeName name="abstract_class.game_level.AdvancedLevel"/>
+    <fullyQualifiedTypeName name="abstract_class.game_level.PlayerLevel"/>
+    <fullyQualifiedTypeName name="abstract_class.game_level.SuperLevel"/>
+    <fullyQualifiedTypeName name="interfaces.Schefuler"/>
+    <fullyQualifiedTypeName name="schedule.Scheduler"/>
+    <fullyQualifiedTypeName name="schedule.RoundRobin"/>
+    <fullyQualifiedTypeName name="schedule.LeastJob"/>
+    <fullyQualifiedTypeName name="schedule.PriorityAllocation"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>
