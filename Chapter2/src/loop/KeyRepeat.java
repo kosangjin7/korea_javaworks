@@ -11,11 +11,11 @@ public class KeyRepeat {
 	System.out.print("계속 반복할게요?(y/n)");
 	String key = scan.nextLine();
 	
-	if(key.equals(key"y")) {
-	}
+	if(key.equals(key"y") {
+	};
 	
 	
-	}
+	
 	}
 	
 }

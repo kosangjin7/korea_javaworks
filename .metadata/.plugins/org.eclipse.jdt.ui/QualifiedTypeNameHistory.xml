@@ -33,4 +33,8 @@
     <fullyQualifiedTypeName name="schedule.PriorityAllocation"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="member.MemberArrayTest"/>
+    <fullyQualifiedTypeName name="member.MemberArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>
