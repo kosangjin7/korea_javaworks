@@ -72,7 +72,7 @@ public class BankMain {
 	 
 	 
 	 private static void withdraw() {
-		   //예금
+		   //출금
 		   System.out.println("====================================") ;
 			System.out.println("             출금                  ");
 			System.out.println("====================================");
