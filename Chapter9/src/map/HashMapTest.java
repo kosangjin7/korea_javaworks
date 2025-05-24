@@ -12,6 +12,7 @@ public class HashMapTest {
 		
 		Map<String,Integer>  map=new HashMap<>();
 		
+		//요소저장
 		map.put("강감찬", 95);
 		map.put("홍길동", 75);
 		map.put("이순신", 80);
@@ -28,7 +29,7 @@ public class HashMapTest {
 		System.out.println(map);
 		
 		//요소 삭제
-		if(map.containsKey("홍길동")) {
+		if(map.containsKey("홍길동")) {//안전한 삭제
 		map.remove("홍길동");
 		}
 		//전체출력-반복자 클래스(Iterator)사용,while문 사용

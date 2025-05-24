@@ -13,8 +13,16 @@ public class Member {
 	public void setMemberId(int memberId) {
 		this.memberId=memberId;
 	}
-	public void getMemberId(String memberName) {
-		this.memberName=memberName;
+	public int getMemberId() {
+		return memberId;
+	}
+	
+	public String getMemberName() {
+		return memberName;
+	}
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
 	}
 
 	@Override
