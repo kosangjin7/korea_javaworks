@@ -16,6 +16,7 @@ public class RegExpTest {
 		boolean result=mat.matches();
 		
 		System.out.println(result);//true
+		
 		//숫자만 허용하는 패턴 검사
 		String pattern="^[0-9]$";
 		String str="abc1234";
@@ -32,11 +33,15 @@ public class RegExpTest {
 					
 		System.out.println("이름검사:"+name_check);
 		System.out.println("전화번호:"+tel_check);
+		
+		
 		//한글 이름 패턴 유효성 검사
 		Scanner sc=new Scanner(System.in);
 		System.out.println("한글 이름을 입력하세요:");
-		String inputName=sc.nextLine();
+		String inputName=sc.nextLine();//문자입력
 		
+		
+		//정규식 패턴에 일치하지 않으면
 		if(!Pattern.matches("[가-힣]{2,5}", inputName)) {
 			System.out.println("올바른 한글 이름이 아닙니다.");
 		}
