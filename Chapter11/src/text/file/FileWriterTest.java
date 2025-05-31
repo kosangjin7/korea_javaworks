@@ -1,4 +1,4 @@
-package writer_read;
+package text.file;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class FileWriterTest {
 			writer.write('b');
 			
 			//아스키 코드값
-			writer.write(49);
+			writer.write(49);//정수-1
 			
 			//배열을 사용하여 문자 쓰기
 			char[] arr= {'C','D','E'};
