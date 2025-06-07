@@ -14,7 +14,7 @@ public class ConnectionTest {
 		Class.forName("oracle.jdbc.OracleDriver");
 				//연결
 		conn=DriverManager.getConnection(
-				"jdbc:oracle:thin@localhost:1521/xe",//db url
+				"jdbc:oracle:thin:@localhost:1521/xe",//db url
 				"system",  //사용자계정				
 				"pw1234"//사용자 패스워드
 				
