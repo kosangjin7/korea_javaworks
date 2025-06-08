@@ -17,12 +17,27 @@ public class UserTest {
 		user.setUserAge(31);
 		dao.insertUser(user);*/
 		
+		//회원수정
+		/*Users renewUser=new Users();
+		renewUser.setUserId("today ");
+		renewUser.getUserPassword()"t1357!!");
+		renewUser.getUserName("이종범");
+		renewUser.getUserAge(50);
+		
+		dao.updateUser(renewUser);//수정메서드 호출*/
+		
+		//회원삭제
+		dao.deleteUser("cloud");//삭제 메서드 호출
+		
 		List<Users> userList=dao.getUserList();
 		for(int i=0;i<userList.size();i++) {
 			Users findUser=userList.get(i);
 			System.out.println(findUser);
 		}
 		
+		//회원상세보기
+		Users gerUser=dao.getUser("korea");
+		System.out.println(getUser);
 	}
 
 }

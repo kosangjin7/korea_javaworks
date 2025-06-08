@@ -76,11 +76,69 @@ public class UsersDAO {
 			return userList;
 		}
 	
+	//회원 상세보기(1건보기)
+		public Users getUser(String userId) {
+			String sql="SELECT*FROM user WHERE userid =?";
+			Users user =new Users();
+			
+			try(Connection conn=DriverManager.getConnection(url,username,password);
+				PreparedStatement pstmt=conn.prepareStatement(sql)){
+					pstmt.setString(1,userId);
+				
+				try(ResultSet rs=pstmt.executeQuery()){
+					if(rs.next()) {
+						user.setUserId(rs.getString("userid"));
+						user.setUserPassword(rs.getString("userpassword"));
+						user.setUserName(rs.getString("username"));
+						user.setUserAge(rs.getInt("userage"));
+					}
+				}					
+								
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
+			return user;
+		}
 	
-	
-	
-	
-	
+	//회원수정
+		public void updateUser(User user) {
+			String sql="UPDATE users SET userpassword=?,username=?,userage=?"
+		+"WHERE userId=?";
+			
+			try(Connection conn=DriverManager.getConnection(url,username,password);
+					PreparedStatement pstmt=conn.prepareStatement(sql)){
+				
+				
+				pstmt.setString(1, user.getUserPassword());
+				pstmt.setString(2, user.getUserName());
+				pstmt.setInt(3, user.getUserAge());
+				pstmt.setString(4, user.getUserId());
+				
+				pstmt.executeUpdate();//sql실행(커밋과 같은 역할)
+				
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		//회원삭제
+		public Users deleteUser(String userId) {
+			String sql="DELETE FROM user WHERE userid =?";
+			
+			try(Connection conn=DriverManager.getConnection(url,username,password);
+					PreparedStatement pstmt=conn.prepareStatement(sql)){	
+					
+						pstmt.setString(1,userId());
+												
+						pstmt.executeUpdate();//sql실행(커밋과 같은 역할)
+											
+						
+					}catch(SQLException e) {
+						e.printStackTrace();
+					}	
+				}
+		}
+}
 	
 	
 	
@@ -88,4 +146,4 @@ public class UsersDAO {
 	
 	
 
-}
+
