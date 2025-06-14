@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="abstract_class.car.AICar"/>
-    <fullyQualifiedTypeName name="interfaces.calculator.Calculator"/>
-    <fullyQualifiedTypeName name="interfaces.calculator.MyCalculator"/>
-    <fullyQualifiedTypeName name="java.lang.Character"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="interfaces.remote.control.Television"/>
-    <fullyQualifiedTypeName name="interfaces.remote.control.RemoteControlTest"/>
-    <fullyQualifiedTypeName name="interfaces.remote.control.Searvhable"/>
-    <fullyQualifiedTypeName name="interfaces.remote.control.SmartTV"/>
-    <fullyQualifiedTypeName name="interfaces.remote.control.RemoteControl"/>
-    <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
     <fullyQualifiedTypeName name="abstract_class.game_level.Beginner"/>
     <fullyQualifiedTypeName name="abstract_class.game_level.AdvancedLevel"/>
     <fullyQualifiedTypeName name="abstract_class.game_level.PlayerLevel"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="interface_imple.MyMathImpl"/>
+    <fullyQualifiedTypeName name="lambda.MyMath"/>
+    <fullyQualifiedTypeName name="interface_imple.StringConcat"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="lambda.StringConcat"/>
+    <fullyQualifiedTypeName name="streams.StreamTest"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="streams.student.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
 </qualifiedTypeNameHistroy>
